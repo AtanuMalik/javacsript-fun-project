@@ -2,6 +2,7 @@ let question = document.getElementById("qs")
 let yesBtn = document.getElementById("yes")
 let noBtn = document.getElementById("no")
 let ans = document.getElementById("ans")
+let meme = document.getElementById("meme")
 
 let currentWidth = window.innerWidth - 120;     //Subtracted the width of the button
 let currentHeight = window.innerHeight - 60;    //Subtracted the height of the button
@@ -24,7 +25,7 @@ function moveButtonToRandomPosition() {
 }
 
 noBtn.onclick = ()=>{
-    ans.innerText="You cheated!";
+    meme.src = "/prakash-raj-cheating.gif";
     noBtn.style.display = "none";
     yesBtn.style.display = "none";
     question.style.display = "none";
